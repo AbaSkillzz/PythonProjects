@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} Sign-In {% endblock %}
+
+{% block content %}
+    <div class="top"> 
+        {% if session['logged_in'] == True %}
+        <a href="/logout", style="padding-left: 84%; color: red; font-size: x-large; text-decoration: none"> Log-Out </a>  
+
+        {% else %}
+            <ul>
+                <li>  <a href="/"> HOME </a>  </li>
+                <li>  <a href="/login"> LOG-IN </a>  </li>
+                <li>  <a href="/signup"> SIGN-UP </a>  </li>
+            </ul>
+        {% endif %}
+    </div>
+
+    <h4>Login with your credentials to create or see your notes.</h4>
+    {{ wtf.quick_form(form) }}
+{% endblock %}
+
+
+

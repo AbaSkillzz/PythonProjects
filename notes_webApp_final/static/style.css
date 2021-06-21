@@ -1,0 +1,67 @@
+body
+{
+    background-color: whitesmoke;
+}
+
+.top
+{
+    display: flex;
+    height: 17vh;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul 
+{
+    display: flex;
+    padding-left: 75%;
+}
+
+.top ul li
+{
+    margin-left: 10px;
+    padding: 10px;
+    list-style: none;
+    font-size: large;
+}
+
+.top ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* ECCEZZIONE PER LA PARTE TOP DEL profile.html, per la dashboard dell'utente
+.profiletop
+{
+    display: flex;
+    height: 17vh;
+    background-color: black;
+    align-items: center;
+    text-align: right;
+    padding-left: 62%;
+}
+
+.profiletop a
+{
+    text-decoration: none;
+    color: red;
+    font-size: x-large;
+}
+*/
+
+.buttonsArea 
+{
+    height: 60vh;
+    padding-left: 34%;
+    padding-top: 10%;
+    
+}
+
+.buttons
+{
+    font-size: x-large;
+    border-radius: 8%;
+
+}
