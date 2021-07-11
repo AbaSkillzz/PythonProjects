@@ -4,8 +4,8 @@ import time
 
 
 
-def get_humanDate(epochime):
-    human_read_date = time.strftime("%d-%m-%Y", time.gmtime(epochime))
+def get_humanDate(epochtime):
+    human_read_date = time.strftime("%d-%m-%Y", time.gmtime(epochtime))
     return human_read_date
 
 def get_humanTime(epochtime):
