@@ -126,7 +126,7 @@ def daily_weather(json_response):
 
 latitude = str(input("Insert the latitude of the position: "))
 longitude = str(input("Insert the longitude of the position: "))
-key = str(input("Insert your generated key on https://home.openweathermap.org/: "))
+key = str(input("Insert your key generated on https://home.openweathermap.org/: "))
 
 try:
     endpoint = f"https://api.openweathermap.org/data/2.5/onecall?&lat={latitude}&lon={longitude}&lan=it&units=metric&exclude=alert&appid={key}"
