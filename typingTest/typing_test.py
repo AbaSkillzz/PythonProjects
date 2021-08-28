@@ -23,8 +23,8 @@ def create_test_window():
 
 #FUNCTIONALITIES, PROCESSING
 def score(seconds):
-    paragraph = open("/home/hossain/Desktop/Programming/Python/typing_test/paragraph.txt", "r")
-    user_text = open("/home/hossain/Desktop/Programming/Python/typing_test/inputs.txt", "r")
+    paragraph = open("path_to_file_with_text_to_copy", "r")
+    user_text = open("path_to_file_where_save_user_inputs", "r")
     
     paragraph_content = paragraph.read()
     user_content = user_text.read()
@@ -76,7 +76,7 @@ def counter():
         set_time -= 1
         window["counter"].Update(f"0:{set_time}")
 
-    with open("typing_test/inputs.txt", "a") as f:
+    with open("path_to_file_where_save_user_inputs", "a") as f:
             f.write(value["input"])
     window["input"].Update("")
     window["counter"].Update("Counter")
@@ -102,9 +102,9 @@ while True:
         time.sleep(1)
         try:
             #restoring the user's input file
-            with open("typing_test/inputs.txt", "w") as inp_file:
+            with open("path_to_file_where_save_user_inputs", "w") as inp_file:
                 inp_file.write("")
-            paragraph = open("/home/hossain/Desktop/Programming/Python/typing_test/paragraph.txt", "r")
+            paragraph = open("path_to_file_with_text_to_copy", "r")
             window["text"].Update(paragraph.read())
             window["input"].Update("")
             window["input_frame"].Update("Write to start the the test")
